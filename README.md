@@ -1,6 +1,6 @@
 # React JS Resume Web App Template
 
-![Alt text](/Users/anyanguyen/Desktop/react-resume/public/images/portfolio/Screenshot-resume.png?raw=true “Resume”)
+![ReactJS Resume Website Template](Screenshot-resume.png?raw=true "ReactJS Resume Website Template")
 
 ### <a href="https://react-resume-template.herokuapp.com/">LIVE DEMO</a>
 
