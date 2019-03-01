@@ -1,6 +1,36 @@
 import React, { Component } from "react";
+import ReactTypingEffect from "react-typing-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+const changingText = ["Works?", "Works!", "WooHoo!"];
+let index = 0;
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      changingText: ["1", "2", "3", " Hello Earthlings"],
+      index: 0
+    };
+  }
+
+  // componentDidMount() {
+  //   this.handleChangingText();
+  // }
+
+  // handleChangingText = () => {
+  //   // this.state.changingText.map((word, index) => {
+  //   //   index = index + 1 > 2 ? 0 : ++index + 1;
+  //   //   setInterval(word[index], 3000);
+  //   // });
+  //   setInterval(() => {
+  //     index = this.state.index + 1 > 2 ? 0 : ++this.state.index + 1;
+  //     this.setState({ changingTetx: this.state.changingText[index] });
+  //   }, 5000);
+  //   return changingText;
+  // };
+
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -64,11 +94,16 @@ class Header extends Component {
 
         <div className="row banner">
           <div className="banner-text">
-            <h1 className="responsive-headline">Welcome Earthlings,</h1>
+            <h1 className="responsive-headline">
+              <ReactTypingEffect text="Hello Earthlings" eraseDelay="2500" />
+            </h1>
+            <h3>This website belongs to a {occupation}.</h3>
+
             <h3>
-              This website belongs to a <span>{occupation}</span>.
+              {description}
+              <FontAwesomeIcon icon={faCoffee} />.
             </h3>
-            <h3>{description}.</h3>
+
             <hr />
             <ul className="social">{networks}</ul>
           </div>

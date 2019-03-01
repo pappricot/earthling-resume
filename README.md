@@ -27,7 +27,7 @@ Once you have a React app up and running by following the steps in the above lin
 
 ### 4. Replace images and fonts
 
-Next, you will want to replace the images, and fonts if you like, with your own. All you have to do is replace the images at public/images/header-background.jpg, public/images/testimonials-bg.jpg and public/favicon.ico with your own. <em>YOU MUST KEEP THE SAME NAMES ON THE IMAGES.</em>
+Next, you will want to replace the images, and fonts if you like, with your own. All you have to do is replace the images at public/images/header-background.jpg, public/images/testimonials-bg.jpg and public/.ico with your own. <em>YOU MUST KEEP THE SAME NAMES ON THE IMAGES.</em>
 
 ### 5. Fill in your personal info
 
